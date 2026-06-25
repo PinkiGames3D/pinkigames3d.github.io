@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PinkiGames3D | Mis Redes</title>
-    <!-- Cargamos los iconos de FontAwesome -->
+    <!-- Cargamos los iconos de FontAwesome para los botones de las redes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body { 
@@ -16,7 +16,7 @@
             margin: 0;
         }
         .container {
-            max-width: 500px;
+            max-width: 550px;
             margin: 50px auto;
             background-color: #1a1a1e; 
             padding: 40px 30px;
@@ -24,12 +24,12 @@
             box-shadow: 0px 15px 35px rgba(0,0,0,0.7);
             border: 1px solid #29292e;
         }
-        /* Contenedor para alinear los mandos de Xbox perfectamente a los lados */
+        /* Alineación perfecta del título y los dos mandos de Xbox */
         .title-container {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
             margin-bottom: 10px;
         }
         h1 { 
@@ -40,10 +40,11 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        /* Diseño de los mandos de Xbox de los lados */
-        .gamepad-xbox {
-            color: #ffffff; 
-            font-size: 2.5rem;
+        /* Estilo para los mandos de Xbox programados en SVG */
+        .xbox-pad {
+            width: 50px;
+            height: 50px;
+            fill: #ffffff; /* Color del mando */
             filter: drop-shadow(0px 0px 8px rgba(255, 51, 51, 0.6));
         }
         .subtitle { 
@@ -78,11 +79,19 @@
 </head>
 <body>
     <div class="container">
-        <!-- Título con un mando completo a cada lado -->
+        <!-- Título con mandos de Xbox reales generados por código SVG -->
         <div class="title-container">
-            <i class="fas fa-gamepad gamepad-xbox"></i>
+            <!-- Mando Izquierdo -->
+            <svg class="xbox-pad" viewBox="0 0 24 24">
+                <path d="M21.73 7.6ca3.42 3.42 0 0 0-3-.87l-2.07.41a8.41 8.41 0 0 0-9.32 0l-2.07-.41a3.42 3.42 0 0 0-3 .87A3.59 3.59 0 0 0 1.25 10.5l.81 5.72a3.7 3.7 0 0 0 3.65 3.18h.09a3.7 3.7 0 0 0 2.87-1.37L10.3 16a4.27 4.27 0 0 1 3.4 0l1.63 2.06a3.71 3.71 0 0 0 3 1.37h.09a3.7 3.7 0 0 0 3.65-3.18l.81-5.72a3.59 3.59 0 0 0-1.15-2.93ZM7.5 11.5A1.25 1.25 0 1 1 8.75 10.25 1.25 1.25 0 0 1 7.5 11.5Zm1.75 4H8.5v.75a.5.5 0 0 1-1 0V15.5h-.75a.5.5 0 0 1 0-1H7.5v-.75a.5.5 0 0 1 1 0v.75h.75a.5.5 0 0 1 0 1Zm6.5-3.5a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm1 1.75a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm0-3.5a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm1 1.75a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm-1.25 3A1.25 1.25 0 1 1 17.75 14a1.25 1.25 0 0 1-1.25 1.25Z"/>
+            </svg>
+
             <h1>PinkiGames3D</h1>
-            <i class="fas fa-gamepad gamepad-xbox"></i>
+
+            <!-- Mando Derecho -->
+            <svg class="xbox-pad" viewBox="0 0 24 24">
+                <path d="M21.73 7.6ca3.42 3.42 0 0 0-3-.87l-2.07.41a8.41 8.41 0 0 0-9.32 0l-2.07-.41a3.42 3.42 0 0 0-3 .87A3.59 3.59 0 0 0 1.25 10.5l.81 5.72a3.7 3.7 0 0 0 3.65 3.18h.09a3.7 3.7 0 0 0 2.87-1.37L10.3 16a4.27 4.27 0 0 1 3.4 0l1.63 2.06a3.71 3.71 0 0 0 3 1.37h.09a3.7 3.7 0 0 0 3.65-3.18l.81-5.72a3.59 3.59 0 0 0-1.15-2.93ZM7.5 11.5A1.25 1.25 0 1 1 8.75 10.25 1.25 1.25 0 0 1 7.5 11.5Zm1.75 4H8.5v.75a.5.5 0 0 1-1 0V15.5h-.75a.5.5 0 0 1 0-1H7.5v-.75a.5.5 0 0 1 1 0v.75h.75a.5.5 0 0 1 0 1Zm6.5-3.5a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm1 1.75a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm0-3.5a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm1 1.75a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm-1.25 3A1.25 1.25 0 1 1 17.75 14a1.25 1.25 0 0 1-1.25 1.25Z"/>
+            </svg>
         </div>
         
         <p class="subtitle">¡Conéctate conmigo en mis redes!</p>
