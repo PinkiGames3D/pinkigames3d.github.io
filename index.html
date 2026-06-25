@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PinkiGames3D | Mis Redes</title>
+    <!-- Cargamos los iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             text-align: center; 
-            background-color: #121214; /* Fondo oscuro estilo gamer */
+            background-color: #121214; 
             color: #ffffff; 
             padding: 20px;
             margin: 0;
@@ -17,33 +18,33 @@
         .container {
             max-width: 500px;
             margin: 50px auto;
-            background-color: #1a1a1e; /* Caja contenedora */
+            background-color: #1a1a1e; 
             padding: 40px 30px;
             border-radius: 20px;
             box-shadow: 0px 15px 35px rgba(0,0,0,0.7);
             border: 1px solid #29292e;
         }
-        /* Contenedor del título para alinear los mandos perfectamente a los lados */
+        /* Contenedor para alinear los mandos de Xbox perfectamente a los lados */
         .title-container {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px;
+            gap: 20px;
             margin-bottom: 10px;
         }
         h1 { 
-            color: #ff3333; /* Tu nombre en rojo brillante */
+            color: #ff3333; /* Nombre en rojo brillante */
             font-size: 2.4rem;
             margin: 0;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        /* Iconos de los mandos de Xbox */
-        .xbox-icon {
-            color: #ffffff; /* Color blanco para resaltar */
-            font-size: 2.2rem;
-            filter: drop-shadow(0px 0px 8px rgba(255, 51, 51, 0.5));
+        /* Diseño de los mandos de Xbox de los lados */
+        .gamepad-xbox {
+            color: #ffffff; 
+            font-size: 2.5rem;
+            filter: drop-shadow(0px 0px 8px rgba(255, 51, 51, 0.6));
         }
         .subtitle { 
             color: #a8a8b3; 
@@ -67,7 +68,6 @@
             transition: all 0.3s ease;
             border: 1px solid #29292e;
         }
-        /* Efectos visuales al pasar el ratón */
         .social-btn:hover {
             transform: translateY(-3px);
         }
@@ -78,22 +78,26 @@
 </head>
 <body>
     <div class="container">
+        <!-- Título con un mando completo a cada lado -->
         <div class="title-container">
-            <i class="fab fa-xbox xbox-icon"></i>
+            <i class="fas fa-gamepad gamepad-xbox"></i>
             <h1>PinkiGames3D</h1>
-            <i class="fab fa-xbox xbox-icon"></i>
+            <i class="fas fa-gamepad gamepad-xbox"></i>
         </div>
         
         <p class="subtitle">¡Conéctate conmigo en mis redes!</p>
 
+        <!-- DISCORD -->
         <a href="https://discord.com" target="_blank" class="social-btn discord">
             <i class="fab fa-discord"></i> Discord
         </a>
 
+        <!-- YOUTUBE -->
         <a href="https://youtube.com" target="_blank" class="social-btn youtube">
             <i class="fab fa-youtube"></i> YouTube
         </a>
 
+        <!-- BLUESKY -->
         <a href="https://bsky.app" target="_blank" class="social-btn bluesky">
             <i class="fa-brands fa-bluesky"></i> Bluesky
         </a>
