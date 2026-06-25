@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎮PinkiGames3D🎮 | Mi Web</title>
+    <title>🎮PinkiGames3D🎮 | Mis Proyectos</title>
     <!-- Cargamos los iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -24,7 +24,7 @@
             box-shadow: 0px 15px 35px rgba(0,0,0,0.7);
             border: 1px solid #29292e;
         }
-        /* Contenedor del título principal */
+        /* Título Principal con Mandos */
         .title-container {
             display: flex;
             align-items: center;
@@ -52,10 +52,19 @@
             margin-bottom: 30px;
         }
         
-        /* --- SECCIÓN REDES --- */
-        .networks-container {
-            margin-bottom: 40px;
+        /* Títulos de las Secciones */
+        .section-title {
+            text-align: left;
+            font-size: 1.1rem;
+            color: #ff3333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 25px 0 15px 5px;
+            border-left: 3px solid #ff3333;
+            padding-left: 10px;
         }
+
+        /* Estilo base de todos los botones */
         .social-btn {
             display: flex;
             align-items: center;
@@ -64,7 +73,7 @@
             background-color: #202024;
             color: white;
             text-decoration: none;
-            padding: 14px;
+            padding: 15px;
             margin-bottom: 15px;
             border-radius: 12px;
             font-size: 1.1rem;
@@ -72,97 +81,72 @@
             transition: all 0.3s ease;
             border: 1px solid #29292e;
         }
-        .social-btn:hover { transform: translateY(-3px); }
+        .social-btn:hover { 
+            transform: translateY(-3px); 
+        }
+
+        /* Efectos HOVER para las Redes Sociales */
         .discord:hover { background-color: #5865f2; border-color: #5865f2; box-shadow: 0px 5px 15px rgba(88, 101, 242, 0.4); }
         .youtube:hover { background-color: #ff0000; border-color: #ff0000; box-shadow: 0px 5px 15px rgba(255, 0, 0, 0.4); }
         .bluesky:hover { background-color: #0285ff; border-color: #0285ff; box-shadow: 0px 5px 15px rgba(2, 133, 255, 0.4); }
 
-        /* --- NUEVAS SECCIONES DE CONSOLAS --- */
-        .console-section {
-            background-color: #202024;
-            border: 1px solid #29292e;
-            border-radius: 15px;
-            padding: 20px;
-            margin-top: 25px;
-            text-align: left;
-        }
-        .console-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            border-bottom: 2px solid #29292e;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-        .console-header h2 {
-            margin: 0;
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .console-header svg {
-            width: 32px;
-            height: 32px;
+        /* Iconos personalizados en SVG para los botones de las consolas */
+        .btn-icon {
+            width: 24px;
+            height: 24px;
             fill: #ffffff;
         }
-        /* Colores temáticos para los títulos de las consolas */
-        .ps5-title { color: #00439c; } /* Azul PlayStation */
-        .switch-title { color: #e60012; } /* Rojo Nintendo */
-        
-        .console-content {
-            color: #a8a8b3;
-            font-size: 1rem;
-            line-height: 1.5;
-            margin: 0;
+
+        /* Efectos HOVER para los botones de repositorios de las consolas */
+        .ps5-btn:hover { 
+            background-color: #00439c; 
+            border-color: #00439c; 
+            box-shadow: 0px 5px 15px rgba(0, 67, 156, 0.5); 
+        }
+        .switch-btn:hover { 
+            background-color: #e60012; 
+            border-color: #e60012; 
+            box-shadow: 0px 5px 15px rgba(230, 0, 18, 0.5); 
         }
     </style>
 </head>
 <body>
     <div class="container">
+        
         <!-- Título Principal -->
         <div class="title-container">
             <svg class="xbox-pad" viewBox="0 0 24 24"><path d="M21.73 7.6ca3.42 3.42 0 0 0-3-.87l-2.07.41a8.41 8.41 0 0 0-9.32 0l-2.07-.41a3.42 3.42 0 0 0-3 .87A3.59 3.59 0 0 0 1.25 10.5l.81 5.72a3.7 3.7 0 0 0 3.65 3.18h.09a3.7 3.7 0 0 0 2.87-1.37L10.3 16a4.27 4.27 0 0 1 3.4 0l1.63 2.06a3.71 3.71 0 0 0 3 1.37h.09a3.7 3.7 0 0 0 3.65-3.18l.81-5.72a3.59 3.59 0 0 0-1.15-2.93ZM7.5 11.5A1.25 1.25 0 1 1 8.75 10.25 1.25 1.25 0 0 1 7.5 11.5Zm1.75 4H8.5v.75a.5.5 0 0 1-1 0V15.5h-.75a.5.5 0 0 1 0-1H7.5v-.75a.5.5 0 0 1 1 0v.75h.75a.5.5 0 0 1 0 1Zm6.5-3.5a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm1 1.75a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm0-3.5a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm1 1.75a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm-1.25 3A1.25 1.25 0 1 1 17.75 14a1.25 1.25 0 0 1-1.25 1.25Z"/></svg>
             <h1>🎮PinkiGames3D🎮</h1>
             <svg class="xbox-pad" viewBox="0 0 24 24"><path d="M21.73 7.6ca3.42 3.42 0 0 0-3-.87l-2.07.41a8.41 8.41 0 0 0-9.32 0l-2.07-.41a3.42 3.42 0 0 0-3 .87A3.59 3.59 0 0 0 1.25 10.5l.81 5.72a3.7 3.7 0 0 0 3.65 3.18h.09a3.7 3.7 0 0 0 2.87-1.37L10.3 16a4.27 4.27 0 0 1 3.4 0l1.63 2.06a3.71 3.71 0 0 0 3 1.37h.09a3.7 3.7 0 0 0 3.65-3.18l.81-5.72a3.59 3.59 0 0 0-1.15-2.93ZM7.5 11.5A1.25 1.25 0 1 1 8.75 10.25 1.25 1.25 0 0 1 7.5 11.5Zm1.75 4H8.5v.75a.5.5 0 0 1-1 0V15.5h-.75a.5.5 0 0 1 0-1H7.5v-.75a.5.5 0 0 1 1 0v.75h.75a.5.5 0 0 1 0 1Zm6.5-3.5a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm1 1.75a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm0-3.5a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm1 1.75a.75.75 0 1 1 .75-.75.75.75 0 0 1-.75.75Zm-1.25 3A1.25 1.25 0 1 1 17.75 14a1.25 1.25 0 0 1-1.25 1.25Z"/></svg>
         </div>
-        <p class="subtitle">¡Conéctate conmigo en mis redes!</p>
+        <p class="subtitle">¡Bienvenido a mi espacio gamer!</p>
 
-        <!-- Bloque de Redes Sociales -->
-        <div class="networks-container">
-            <a href="https://discord.com" target="_blank" class="social-btn discord">
-                <i class="fab fa-discord"></i> Discord
-            </a>
-            <a href="https://youtube.com" target="_blank" class="social-btn youtube">
-                <i class="fab fa-youtube"></i> YouTube
-            </a>
-            <a href="https://bsky.app" target="_blank" class="social-btn bluesky">
-                <i class="fa-brands fa-bluesky"></i> Bluesky
-            </a>
-        </div>
+        <!-- SECCIÓN: MIS REDES -->
+        <div class="section-title">Mis Redes</div>
+        <a href="https://discord.com" target="_blank" class="social-btn discord">
+            <i class="fab fa-discord"></i> Discord
+        </a>
+        <a href="https://youtube.com" target="_blank" class="social-btn youtube">
+            <i class="fab fa-youtube"></i> YouTube
+        </a>
+        <a href="https://bsky.app" target="_blank" class="social-btn bluesky">
+            <i class="fa-brands fa-bluesky"></i> Bluesky
+        </a>
 
-        <!-- SECCIÓN PLAYSTATION 5 -->
-        <div class="console-section">
-            <div class="console-header">
-                <!-- Icono de Playstation -->
-                <svg viewBox="0 0 24 24"><path d="M11.66 17.06c-1.39 0-3.05-.22-4.52-.63v1.8c1.37.45 3.03.68 4.62.68 4.3 0 6.64-1.63 6.64-4.21 0-3.41-4.04-3.69-5.94-4.14-1.57-.37-2.73-.64-2.73-1.63 0-.89.87-1.37 2.37-1.37 1.41 0 2.87.21 4.14.63V6.43c-1.3-.4-2.75-.6-4.13-.6-3.83 0-6 1.63-6 4.14 0 3.25 3.93 3.59 5.86 4.02 1.71.38 2.83.64 2.83 1.73.01.99-.92 1.34-2.14 1.34z"/></svg>
-                <h2 class="ps5-title">PlayStation 5</h2>
-            </div>
-            <p class="console-content">
-                Aquí puedes poner lo que quieras sobre PS5: tu ID de PSN para que te agreguen, tus juegos favoritos o tus últimas capturas en 3D de juegos de PlayStation.
-            </p>
-        </div>
+        <!-- SECCIÓN: REPOSITORIOS / PROYECTOS -->
+        <div class="section-title">Proyectos GitHub</div>
 
-        <!-- SECCIÓN NINTENDO SWITCH -->
-        <div class="container-console console-section">
-            <div class="console-header">
-                <!-- Icono de Nintendo Switch -->
-                <svg viewBox="0 0 24 24"><path d="M7.74 2A5.74 5.74 0 0 0 2 7.74v8.52A5.74 5.74 0 0 0 7.74 22h1.61V2H7.74zM5.32 9.68a1.61 1.61 0 1 1 0-3.22 1.61 1.61 0 0 1 0 3.22zm9.33-7.68V22h1.61A5.74 5.74 0 0 0 22 16.26V7.74A5.74 5.74 0 0 0 16.26 2h-1.61zm4.03 12.1a1.61 1.61 0 1 1 0-3.22 1.61 1.61 0 0 1 0 3.22z"/></svg>
-                <h2 class="switch-title">Nintendo Switch</h2>
-            </div>
-            <p class="console-content">
-                Espacio reservado para Nintendo Switch. Comparte tu código de amigo de Nintendo, tus torneos de Mario Kart, Smash Bros o tus proyectos de modelado inspirados en Nintendo.
-            </p>
-        </div>
+        <!-- Botón Repositorio PS5 -->
+        <a href="https://github.com" target="_blank" class="social-btn ps5-btn">
+            <svg class="btn-icon" viewBox="0 0 24 24"><path d="M11.66 17.06c-1.39 0-3.05-.22-4.52-.63v1.8c1.37.45 3.03.68 4.62.68 4.3 0 6.64-1.63 6.64-4.21 0-3.41-4.04-3.69-5.94-4.14-1.57-.37-2.73-.64-2.73-1.63 0-.89.87-1.37 2.37-1.37 1.41 0 2.87.21 4.14.63V6.43c-1.3.4-2.75-.6-4.13-.6-3.83 0-6 1.63-6 4.14 0 3.25 3.93 3.59 5.86 4.02 1.71.38 2.83.64 2.83 1.73.01.99-.92 1.34-2.14 1.34z"/></svg>
+            Repositorio PS5
+        </a>
+
+        <!-- Botón Repositorio Nintendo Switch -->
+        <a href="https://github.com" target="_blank" class="social-btn switch-btn">
+            <svg class="btn-icon" viewBox="0 0 24 24"><path d="M7.74 2A5.74 5.74 0 0 0 2 7.74v8.52A5.74 5.74 0 0 0 7.74 22h1.61V2H7.74zM5.32 9.68a1.61 1.61 0 1 1 0-3.22 1.61 1.61 0 0 1 0 3.22zm9.33-7.68V22h1.61A5.74 5.74 0 0 0 22 16.26V7.74A5.74 5.74 0 0 0 16.26 2h-1.61zm4.03 12.1a1.61 1.61 0 1 1 0-3.22 1.61 1.61 0 0 1 0 3.22z"/></svg>
+            Repositorio Switch
+        </a>
 
     </div>
 </body>
